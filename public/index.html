@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>INDEX</title>
+  </head>
+          <script type="text/javascript" src="comprobar.js"> </script>
+  <body>
+
+<a href="listadoUsuario.php">Lista de Usuarios</a></button>
+<hr>
+<div id="Comentarios"></div>
+<form class="" action="insertarusuario.php" method="post" onsubmit="return validar()">
+  <input type="text" name="nombre" id="nombre"><br>
+  <input type="text" name="apellidos" id="apellidos"><br>
+  <input type="text" name="edad" id="edad" ><br>
+  <input type="text" name="curso" id="curso" ><br>
+  <input type="text" name="puntuacion" id="puntuacion"><br>
+  <br>
+  <input type="submit" name="Insertarusuario" value="INSERTAR" class="boton">
+</form>
+<hr>
+
+<form class="" action="borrarusuario.php" method="post" onsubmit="return seguro()">
+  <input type="text" name="id" value="id" onFocus="this.value=''"><br>
+  <br>
+  <input type="submit" name="Borrar" value="BORRAR" class="boton">
+</form>
+<hr>
+<form class="" action="actualizarusuario.php" method="post" onsubmit="return validar2()">
+  <input type="text" name="id" value="id" id="id" o><br>
+  <input type="text" name="nombre" id="nombre2"><br>
+  <input type="text" name="apellidos" id="apellidos2" ><br>
+  <input type="text" name="edad" id="edad2"><br>
+  <input type="text" name="curso" id="curso2"><br>
+  <input type="text" name="puntuacion" id="puntuacion2"><br>
+  <br>
+<input type="submit" name="Actualizar" value="ACTUALIZAR" class="boton">
+</form>
+<hr>
+  </body>
+</html>
